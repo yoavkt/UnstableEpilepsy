@@ -1,0 +1,7 @@
+numpy
+pandas
+PyYAML
+seaborn
+matplotlib
+sklearn
+xgboost==1.6.1 
