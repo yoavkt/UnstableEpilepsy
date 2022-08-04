@@ -35,7 +35,7 @@ def load_model(drug_name):
     return model
 
 
-def load_data(data_file_name, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv'):
+def data_preprocess(data_file_name, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv'):
     """
     load the data and impute it if required
 
@@ -54,4 +54,4 @@ def load_data(data_file_name, impute_drug=None, impute_file_name=f'../csv/mean_p
         X = test_df['X'].loc[:, impute_data.columns]
     else:
         X = impute_columns(test_df['X'], impute_data.loc[impute_drug.lower(), :])
-    return X, test_df['y']
+    return X

@@ -7,11 +7,6 @@ GIT_URL = "https://github.ibm.com/Yoav-Kan-Tor/public_epilepsy"
 pkg_name = "epilepsy_prediction"
 
 
-def get_long_description():
-    """Read long description from README.md in this dir."""
-    with open(Path(__file__).parent / "README.md", encoding="utf-8") as f:
-        long_description = f.read()
-    return long_description
 
 
 def get_version(filename):
@@ -30,8 +25,7 @@ setup(
     version=get_version(Path(pkg_name) / "__init__.py"),
     # packages=find_packages(exclude=['scripts', 'data', 'tests']),
     packages=find_packages(),
-    description="Response profile creation by IBM Haifa Research Labs",
-    long_description=get_long_description(),
+    description="epilepsy prediction profile creation by IBM Haifa Research Labs",
     long_description_content_type="text/markdown",
     url=GIT_URL,
     author="IBM Research Haifa Labs - Causal Machine Learning for Healthcare and Life Sciences",
@@ -51,11 +45,6 @@ setup(
     },
     include_package_data=True,
     package_data={pkg_name: [str(Path(pkg_name) / "tests" / "data" / "*.csv")]},
-    project_urls={
-        #'Documentation': 'https://positivity.readthedocs.io/en/latest/',
-        "Source Code": GIT_URL,
-        "Bug Tracker": GIT_URL + "/issues",
-    },
     classifiers=[
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",

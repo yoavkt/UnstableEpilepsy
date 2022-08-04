@@ -130,3 +130,4 @@ dmypy.json
 csv/.DS_Store
 .DS_Store
 *.xml
+*.iml
