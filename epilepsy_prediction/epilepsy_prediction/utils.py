@@ -35,7 +35,7 @@ def load_model(drug_name):
     return model
 
 
-def data_preprocess(data_file_name, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv'):
+def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv'):
     """
     load the data and impute it if required
 
@@ -48,10 +48,7 @@ def data_preprocess(data_file_name, impute_drug=None, impute_file_name=f'../csv/
     Returns:
         tuple: a tuple where the first element is the imputed data frame and the second is the outcome
     """
-    test_df = pd.read_pickle(data_file_name)
     impute_data = pd.read_csv(impute_file_name, index_col=0)
-    if impute_drug is None:
-        X = test_df['X'].loc[:, impute_data.columns]
-    else:
-        X = impute_columns(test_df['X'], impute_data.loc[impute_drug.lower(), :])
-    return X
+    if not impute_drug is None:
+        X = impute_columns(X, impute_data.loc[impute_drug.lower(), :])
+    return X.loc[:, impute_data.columns]
