@@ -39,7 +39,8 @@ setup(
         "matplotlib",
         "seaborn",
         "xgboost==1.6.1",
-        "sklearn"
+        "sklearn",
+        "fuse-med-ml"
     ],
     extras_require={
     },
