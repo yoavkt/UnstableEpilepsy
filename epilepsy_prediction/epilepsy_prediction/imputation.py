@@ -39,7 +39,7 @@ class regress_missing_imputer:
 
     """
 
-    def __init__(self,numeric_estimator=None,binary_estimator=None,missing_cols=None):
+    def __init__(self,numeric_estimator=None,binary_estimator=None,missing_cols=None,ignore_cols=None):
         if numeric_estimator is None:
             numeric_estimator = LassoCV()
         self._base_numeric_estimator = numeric_estimator
@@ -49,10 +49,11 @@ class regress_missing_imputer:
         self._base_binary_estimator = binary_estimator
         self.missing_cols = missing_cols
         self.estimator_dict = {}
+        self.ignore_cols=list(ignore_cols)+list(missing_cols)
         return None
 
     def _get_data_set(self,X,target,isnull=False):
-        train_X = X.loc[X[target].isnull()==isnull,X.columns.isin(self.missing_cols)]
+        train_X = X.loc[X[target].isnull()==isnull,~X.columns.isin(self.ignore_cols)]
         train_y = X.loc[X[target].isnull()==isnull,target]
         return train_X,train_y
     
