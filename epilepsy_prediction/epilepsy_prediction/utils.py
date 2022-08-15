@@ -13,7 +13,7 @@ from fuse.eval.metrics.classification.metrics_model_comparison_common import (
 from fuse.eval.evaluator import EvaluatorDefault
 
 from fuse.eval.metrics.metrics_common import  CI
-
+import numpy as np
 seed = 23423465
 metrics = OrderedDict([
                 ("auc1", CI(MetricAUCROC(pred="pred1", target="target"), 
@@ -26,7 +26,7 @@ metrics = OrderedDict([
             MetricDelongsTest(pred1="pred_proba1", pred2="pred_proba2",target="target"))
         ])
 
-def impute_columns(X, imputed_values):
+def impute_columns(X, imputed_values,replace_mean=True):
     """
     Add X with missing columns, the values entered are the mean values
 
@@ -39,7 +39,10 @@ def impute_columns(X, imputed_values):
     """
     impute_cols = set(imputed_values.index) - set(X.columns)
     for col in impute_cols:
-        X[col] = imputed_values[col]
+        if replace_mean:
+            X[col] = imputed_values[col]
+        else:
+            X[col] = np.nan
     return X.loc[:, imputed_values.index]
 
 
