@@ -16,10 +16,19 @@ from fuse.eval.metrics.metrics_common import  CI
 import numpy as np
 seed = 23423465
 metrics = OrderedDict([
-                ("auc1", CI(MetricAUCROC(pred="pred1", target="target"), 
+                ("auc1", CI(MetricAUCROC(pred="pred_proba1", target="target"), 
                        stratum="target", rnd_seed=seed)),
-            ("auc2", CI(MetricAUCROC(pred="pred2", target="target"), 
+            ("auc2", CI(MetricAUCROC(pred="pred_proba2", target="target"), 
                        stratum="target", rnd_seed=seed)),
+            ("mcnemar_test", 
+            MetricMcnemarsTest(pred1="pred1", pred2="pred2",target="target")),
+            ('delong_test',
+            MetricDelongsTest(pred1="pred_proba1", pred2="pred_proba2",target="target"))
+        ])
+
+metrics = OrderedDict([
+                ("auc1", MetricAUCROC(pred="pred_proba1", target="target")),
+            ("auc2", MetricAUCROC(pred="pred_proba2", target="target")),
             ("mcnemar_test", 
             MetricMcnemarsTest(pred1="pred1", pred2="pred2",target="target")),
             ('delong_test',
@@ -92,7 +101,7 @@ def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cal
     return X.loc[:, impute_data.columns]
 
 def prepare_fuse_data(clf,clf2,X,y):
-    res = pd.DataFrame(columns=['pred','target','id'])
+    res = pd.DataFrame(columns=['pred1','pred2','target','id'])
     res['id']=X.index
     res['pred1'] = clf.predict(X).squeeze()
     res['pred2'] = clf2.predict(X).squeeze()
