@@ -26,15 +26,6 @@ metrics = OrderedDict([
             MetricDelongsTest(pred1="pred_proba1", pred2="pred_proba2",target="target"))
         ])
 
-metrics = OrderedDict([
-                ("auc1", MetricAUCROC(pred="pred_proba1", target="target")),
-            ("auc2", MetricAUCROC(pred="pred_proba2", target="target")),
-            ("mcnemar_test", 
-            MetricMcnemarsTest(pred1="pred1", pred2="pred2",target="target")),
-            ('delong_test',
-            MetricDelongsTest(pred1="pred_proba1", pred2="pred_proba2",target="target"))
-        ])
-
 def impute_columns(X, imputed_values,replace_mean=True):
     """
     Add X with missing columns, the values entered are the mean values
