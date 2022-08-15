@@ -7,6 +7,34 @@ from sklearn.linear_model import LassoCV
 from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import LogisticRegression
 import numpy as np
+import pandas as pd
+class column_imputer:
+    def __init__(self,file_name,impute_drug,add_mean_values=True) -> None:
+        self.file_name = file_name
+        self.impute_drug = impute_drug
+        self.impute_data = pd.read_csv(file_name, index_col=0)[impute_drug]
+        self.add_mean_values = add_mean_values
+        self.impute_order = None
+        self.missing_cols = None
+        pass
+
+    def fit(self,X):
+        self.missing_cols = set(self.imputed_values.index) - set(X.columns)
+        self.impute_order = X.columns
+        return None
+
+
+    def transform(self,X):
+        for col in self.missing_cols:
+            if self.mean_values:
+                X[col] = self.impute_data[col]
+            else:
+                X[col] = np.nan
+        return X[self.impute_order]
+
+    def fit_transform(self, X):
+        self.fit(X)
+        return self.fit_transform(X)
 class regress_missing_imputer:
     """
 
