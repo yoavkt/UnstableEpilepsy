@@ -2,7 +2,6 @@
 from copy import deepcopy
 from tabnanny import verbose
 from typing_extensions import Self
-from sklearn.impute._base import _BaseImputer
 from sklearn.linear_model import LassoCV
 from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import LogisticRegression
