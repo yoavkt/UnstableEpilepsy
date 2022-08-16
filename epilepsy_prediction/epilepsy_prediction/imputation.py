@@ -37,7 +37,6 @@ class regress_missing_imputer:
     """
 
     """
-
     def __init__(self,numeric_estimator=None,binary_estimator=None,missing_cols=None,ignore_cols=None):
         if numeric_estimator is None:
             numeric_estimator = LassoCV()
