@@ -66,8 +66,8 @@ class regress_missing_imputer:
     def fit(self,X):
         for col in self.missing_cols:
             est = self._get_estimator(X,col)
-            X,y = self._get_data_set(X,col)
-            est.fit(X,y)
+            Xt,yt = self._get_data_set(X,col)
+            est.fit(Xt,yt)
             self.estimator_dict[col] = est
         return Self
 
