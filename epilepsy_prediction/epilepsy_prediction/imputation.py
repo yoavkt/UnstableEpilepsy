@@ -71,8 +71,9 @@ class regress_missing_imputer:
 
     def transform(self,X):
         for col in self.missing_cols:
-            X_pred,_ = self._get_data_set(X,isnull=True)
-            X.loc[X[col].isnull(),col] = self.estimator_dict[col].predict(X_pred)
+            if any(X[col].isnull()):
+                X_pred,_ = self._get_data_set(X,col,isnull=True)
+                X.loc[X[col].isnull(),col] = self.estimator_dict[col].predict(X_pred)
         return X
 
     def fit_transform(self, X):

@@ -61,19 +61,19 @@ def load_prediction_model(drug_name):
     model.load_model(clf)
     return model
 
-def load_imputation_model(drug_name):
+def load_imputation_model(imputer_name):
     """_summary_
 
     Args:
         drug_name (_type_): _description_
     """
-    file_name = f'../models/prediction/imputer_{drug_name}.pkl'
+    file_name = f'../models/imputation/{imputer_name}'
     file = open(file_name,'rb')
     imputer = pickle.load(file)
     file.close()
     return imputer
 
-def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv'):
+def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cals.csv',replace_mean=True):
     """
     load the data and impute it if required
 
@@ -88,7 +88,7 @@ def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cal
     """
     impute_data = pd.read_csv(impute_file_name, index_col=0)
     if not impute_drug is None:
-        X = impute_columns(X, impute_data.loc[impute_drug.lower(), :])
+        X = impute_columns(X, impute_data.loc[impute_drug.lower(), :],replace_mean=replace_mean)
     return X.loc[:, impute_data.columns]
 
 def prepare_fuse_data(clf,clf2,X,y):
