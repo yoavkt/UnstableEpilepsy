@@ -1,60 +1,60 @@
-,estimator type,score
-ER_EP_count,linear,0.5452657659496752
-ER_EP_indicator,logistic,0.7307307975686129
-RESCUE_DRUG_EP_count,linear,0.2529523513956664
-RESCUE_DRUG_EP_indicator,logistic,0.586823916503755
-SEIZURE_OTHER_ER_count,linear,0.4236709393504362
-SEIZURE_OTHER_ER_indicator,logistic,0.5394615008858332
-SEIZURE_UNSPECIFIED_ER_count,linear,0.5308886786251287
-SEIZURE_UNSPECIFIED_ER_indicator,logistic,0.6807520131383767
-stdplac_Ambulatory Surgical Center_count,linear,0.02554761978511466
-stdplac_Emergency Room - Hospital_count,linear,0.7281618252397126
-stdplac_Federally Qualified Health Ctr_count,linear,0.0025250895679210794
-stdplac_Independent Laboratory_count,linear,0.13545170124867634
-stdplac_Inpatient Hospital_count,linear,0.7190819027823261
-stdplac_Inpatient Psychiatric Facility_count,linear,0.19216046934414943
-stdplac_Nursing Facility_count,linear,0.040215837115186615
-stdplac_Office_count,linear,0.3587995786704823
-stdplac_Other/Unknown_count,linear,0.43859868070410424
-stdplac_Outpatient Hospital-On Campus_count,linear,0.5845011668262743
-stdplac_Patient Home_count,linear,0.2832951473307401
-stdplac_Rural Health Clinic_count,linear,0.02800711784339527
-stdplac_Skilled Nursing Facility_count,linear,0.08369018231723468
-stdplac_Urgent Care Facility_count,linear,0.028600850584290627
-stdprov_Acute Care Hospital_count,linear,0.4830680435822564
-stdprov_Anesthesiology_count,linear,0.06531439850732879
-stdprov_Cardiovascular Dis/Cardiology_count,linear,0.23875603312196259
-stdprov_Case Manager_count,linear,0.37768082000942416
-stdprov_Chemical Depend Treatment Ctr_count,linear,0.03909386241494328
-stdprov_Chiropractor/DCM_count,linear,0.3793219064063218
-stdprov_Dermatology_count,linear,0.03241425054006264
-stdprov_Emergency Medicine_count,linear,0.39443178967853776
-stdprov_Extended Care Facility_count,linear,0.012979825153416336
-stdprov_Family Practice_count,linear,0.08162958081657867
-stdprov_Home Health Organiz/Agency_count,linear,0.17666752319776768
-stdprov_Imaging Center_count,linear,0.1027416904407975
-stdprov_Internal Medicine (NEC)_count,linear,0.3335204056804326
-stdprov_Laboratory_count,linear,0.143725373463504
-stdprov_Medical Doctor - MD (NEC)_count,linear,0.351246010132123
-stdprov_Mental Health Facilities_count,linear,0.0853223037742219
-stdprov_Nephrology_count,linear,0.4820128300211788
-stdprov_Neurology_count,linear,0.4144603254740925
-stdprov_Nuclear Medicine_count,linear,0.18608921277658874
-stdprov_Nurse Practitioner_count,linear,0.04305143219241059
-stdprov_Obstetrics & Gynecology_count,linear,0.22989420664898175
-stdprov_Optometrist_count,linear,0.0006939579017769537
-stdprov_Other Facility (NEC)_count,linear,0.4538341744253239
-stdprov_Pathology_count,linear,0.033363476237775136
-stdprov_Physical Medicine & Rehab_count,linear,0.3582221175094624
-stdprov_Podiatry_count,linear,0.008121228426930527
-stdprov_Psychiatry_count,linear,0.1061436611390314
-stdprov_Psychologist_count,linear,0.1561741201914577
-stdprov_Radiology_count,linear,0.36847499783048465
-stdprov_Special Care Facility (NEC)_count,linear,0.0
-stdprov_Supply Center_count,linear,0.1663600782921394
-stdprov_Transportation_count,linear,0.40148398530856677
-stdprov_Urology_count,linear,0.18282718057722203
-SEIZURE_FOCAL_ER_indicator,logistic,0.5778586174746937
-SEIZURE_GENERALIZED_ER_count,linear,0.12923684453910156
-ANY_EEG_count,linear,0.3565912935829034
-SPECIAL_PROC_EP_count,linear,0.09436681965111837
+,estimator type,score,corr
+ER_EP_count,linear,0.545265766,0.941589177
+ER_EP_indicator,logistic,0.730730798,0.872851863
+RESCUE_DRUG_EP_count,linear,0.252952351,0.830302694
+RESCUE_DRUG_EP_indicator,logistic,0.586823917,0.732870386
+SEIZURE_OTHER_ER_count,linear,0.423670939,0.654546892
+SEIZURE_OTHER_ER_indicator,logistic,0.539461501,0.651077392
+SEIZURE_UNSPECIFIED_ER_count,linear,0.530888679,0.626946807
+SEIZURE_UNSPECIFIED_ER_indicator,logistic,0.680752013,0.605774839
+stdplac_Ambulatory Surgical Center_count,linear,0.02554762,0.594041145
+stdplac_Emergency Room - Hospital_count,linear,0.728161825,0.582858099
+stdplac_Federally Qualified Health Ctr_count,linear,0.00252509,0.577501252
+stdplac_Independent Laboratory_count,linear,0.135451701,0.575678021
+stdplac_Inpatient Hospital_count,linear,0.719081903,0.567466413
+stdplac_Inpatient Psychiatric Facility_count,linear,0.192160469,0.551050031
+stdplac_Nursing Facility_count,linear,0.040215837,0.536863427
+stdplac_Office_count,linear,0.358799579,0.492305771
+stdplac_Other/Unknown_count,linear,0.438598681,0.491545391
+stdplac_Outpatient Hospital-On Campus_count,linear,0.584501167,0.49131591
+stdplac_Patient Home_count,linear,0.283295147,0.487365563
+stdplac_Rural Health Clinic_count,linear,0.028007118,0.485080432
+stdplac_Skilled Nursing Facility_count,linear,0.083690182,0.477650647
+stdplac_Urgent Care Facility_count,linear,0.028600851,0.45299133
+stdprov_Acute Care Hospital_count,linear,0.483068044,0.436068499
+stdprov_Anesthesiology_count,linear,0.065314399,0.421691671
+stdprov_Cardiovascular Dis/Cardiology_count,linear,0.238756033,0.419495995
+stdprov_Case Manager_count,linear,0.37768082,0.41514821
+stdprov_Chemical Depend Treatment Ctr_count,linear,0.039093862,0.414991043
+stdprov_Chiropractor/DCM_count,linear,0.379321906,0.401864907
+stdprov_Dermatology_count,linear,0.032414251,0.396190956
+stdprov_Emergency Medicine_count,linear,0.39443179,0.392409972
+stdprov_Extended Care Facility_count,linear,0.012979825,0.386519893
+stdprov_Family Practice_count,linear,0.081629581,0.385302404
+stdprov_Home Health Organiz/Agency_count,linear,0.176667523,0.377560411
+stdprov_Imaging Center_count,linear,0.10274169,0.366495656
+stdprov_Internal Medicine (NEC)_count,linear,0.333520406,0.364161811
+stdprov_Laboratory_count,linear,0.143725373,0.36192477
+stdprov_Medical Doctor - MD (NEC)_count,linear,0.35124601,0.358854829
+stdprov_Mental Health Facilities_count,linear,0.085322304,0.358765947
+stdprov_Nephrology_count,linear,0.48201283,0.3496429
+stdprov_Neurology_count,linear,0.414460325,0.339755311
+stdprov_Nuclear Medicine_count,linear,0.186089213,0.334102767
+stdprov_Nurse Practitioner_count,linear,0.043051432,0.332251414
+stdprov_Obstetrics & Gynecology_count,linear,0.229894207,0.330221332
+stdprov_Optometrist_count,linear,0.000693958,0.328240295
+stdprov_Other Facility (NEC)_count,linear,0.453834174,0.313044686
+stdprov_Pathology_count,linear,0.033363476,0.30160507
+stdprov_Physical Medicine & Rehab_count,linear,0.358222118,0.299986377
+stdprov_Podiatry_count,linear,0.008121228,0.293418903
+stdprov_Psychiatry_count,linear,0.106143661,0.285332736
+stdprov_Psychologist_count,linear,0.15617412,0.285318843
+stdprov_Radiology_count,linear,0.368474998,0.232661781
+stdprov_Special Care Facility (NEC)_count,linear,0,0.22479497
+stdprov_Supply Center_count,linear,0.166360078,0.212937604
+stdprov_Transportation_count,linear,0.401483985,0.199712956
+stdprov_Urology_count,linear,0.182827181,0.199080524
+SEIZURE_FOCAL_ER_indicator,logistic,0.577858617,0.193543958
+SEIZURE_GENERALIZED_ER_count,linear,0.129236845,0.18891388
+ANY_EEG_count,linear,0.356591294,0.176885024
+SPECIAL_PROC_EP_count,linear,0.09436682,0.174439488

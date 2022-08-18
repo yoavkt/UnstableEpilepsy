@@ -15,7 +15,7 @@ from fuse.eval.evaluator import EvaluatorDefault
 from fuse.eval.metrics.metrics_common import  CI
 import numpy as np
 seed = 23423465
-metrics = OrderedDict([
+UTILS_METRICS = OrderedDict([
                 ("auc1", CI(MetricAUCROC(pred="pred_proba1", target="target"), 
                        stratum="target", rnd_seed=seed)),
             ("auc2", CI(MetricAUCROC(pred="pred_proba2", target="target"), 
@@ -92,6 +92,24 @@ def data_preprocess(X, impute_drug=None, impute_file_name=f'../csv/mean_pred_cal
     return X.loc[:, impute_data.columns]
 
 def prepare_fuse_data(clf,clf2,X,y):
+    """
+    The method takes two classifiers and create a data frame
+    that contains the five columns two predict (one per classifier names proba1,proba2)
+    two predict proba  columns (predict_proba1 and predict_proba2) and one target column
+    the columns names are fixed and must be in accordance to the 
+
+    Args:
+        clf1 : The first classifier to estimate  
+        clf2 : The first classifier to estimate 
+        X (pd.DataFrame): The data set to apply the classifiers on
+        y (pd.Series): the response for the data set 
+
+    Returns:
+        pd.DataFrame: a data frame
+        that contains the five columns two predict (one per classifier names proba1,proba2)
+        two predict proba  columns (predict_proba1 and predict_proba2) and one target column
+        the columns names are fixed and must be in accordance to the 
+    """
     res = pd.DataFrame(columns=['pred1','pred2','target','id'])
     res['id']=X.index
     res['pred1'] = clf.predict(X).squeeze()
@@ -110,6 +128,20 @@ def fuse_string(results):
             sum.append(k + f": p-value {v['p_value']:.3f} \n ")
     return ''.join(sum)
 
-def evaluate_model(clf1,clf2,X,y):
+def evaluate_model(clf1,clf2,X,y,metrics=None):
+    """This method apply both estimators of the given data set 
+
+    Args:
+        clf1 : The first classifier to estimate  
+        clf2 : The first classifier to estimate 
+        X (pd.DataFrame): The data set to apply the classifiers on
+        y (pd.Series): the response for the data set 
+        metrics (OrderedDict): ordered dict with the metric definition 
+
+    Returns:
+        dictionary: the evaluation results 
+    """
+    if metrics is None:
+        metrics = UTILS_METRICS
     evaluator = EvaluatorDefault()
     return evaluator.eval(ids=None, data=prepare_fuse_data(clf1,clf2,X,y), metrics=metrics) 
