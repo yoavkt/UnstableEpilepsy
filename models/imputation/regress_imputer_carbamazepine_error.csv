@@ -1,60 +1,60 @@
-,estimator type,score,corr
-ER_EP_count,linear,0.545265766,0.941589177
-ER_EP_indicator,logistic,0.730730798,0.872851863
-RESCUE_DRUG_EP_count,linear,0.252952351,0.830302694
-RESCUE_DRUG_EP_indicator,logistic,0.586823917,0.732870386
-SEIZURE_OTHER_ER_count,linear,0.423670939,0.654546892
-SEIZURE_OTHER_ER_indicator,logistic,0.539461501,0.651077392
-SEIZURE_UNSPECIFIED_ER_count,linear,0.530888679,0.626946807
-SEIZURE_UNSPECIFIED_ER_indicator,logistic,0.680752013,0.605774839
-stdplac_Ambulatory Surgical Center_count,linear,0.02554762,0.594041145
-stdplac_Emergency Room - Hospital_count,linear,0.728161825,0.582858099
-stdplac_Federally Qualified Health Ctr_count,linear,0.00252509,0.577501252
-stdplac_Independent Laboratory_count,linear,0.135451701,0.575678021
-stdplac_Inpatient Hospital_count,linear,0.719081903,0.567466413
-stdplac_Inpatient Psychiatric Facility_count,linear,0.192160469,0.551050031
-stdplac_Nursing Facility_count,linear,0.040215837,0.536863427
-stdplac_Office_count,linear,0.358799579,0.492305771
-stdplac_Other/Unknown_count,linear,0.438598681,0.491545391
-stdplac_Outpatient Hospital-On Campus_count,linear,0.584501167,0.49131591
-stdplac_Patient Home_count,linear,0.283295147,0.487365563
-stdplac_Rural Health Clinic_count,linear,0.028007118,0.485080432
-stdplac_Skilled Nursing Facility_count,linear,0.083690182,0.477650647
-stdplac_Urgent Care Facility_count,linear,0.028600851,0.45299133
-stdprov_Acute Care Hospital_count,linear,0.483068044,0.436068499
-stdprov_Anesthesiology_count,linear,0.065314399,0.421691671
-stdprov_Cardiovascular Dis/Cardiology_count,linear,0.238756033,0.419495995
-stdprov_Case Manager_count,linear,0.37768082,0.41514821
-stdprov_Chemical Depend Treatment Ctr_count,linear,0.039093862,0.414991043
-stdprov_Chiropractor/DCM_count,linear,0.379321906,0.401864907
-stdprov_Dermatology_count,linear,0.032414251,0.396190956
-stdprov_Emergency Medicine_count,linear,0.39443179,0.392409972
-stdprov_Extended Care Facility_count,linear,0.012979825,0.386519893
-stdprov_Family Practice_count,linear,0.081629581,0.385302404
-stdprov_Home Health Organiz/Agency_count,linear,0.176667523,0.377560411
-stdprov_Imaging Center_count,linear,0.10274169,0.366495656
-stdprov_Internal Medicine (NEC)_count,linear,0.333520406,0.364161811
-stdprov_Laboratory_count,linear,0.143725373,0.36192477
-stdprov_Medical Doctor - MD (NEC)_count,linear,0.35124601,0.358854829
-stdprov_Mental Health Facilities_count,linear,0.085322304,0.358765947
-stdprov_Nephrology_count,linear,0.48201283,0.3496429
-stdprov_Neurology_count,linear,0.414460325,0.339755311
-stdprov_Nuclear Medicine_count,linear,0.186089213,0.334102767
-stdprov_Nurse Practitioner_count,linear,0.043051432,0.332251414
-stdprov_Obstetrics & Gynecology_count,linear,0.229894207,0.330221332
-stdprov_Optometrist_count,linear,0.000693958,0.328240295
-stdprov_Other Facility (NEC)_count,linear,0.453834174,0.313044686
-stdprov_Pathology_count,linear,0.033363476,0.30160507
-stdprov_Physical Medicine & Rehab_count,linear,0.358222118,0.299986377
-stdprov_Podiatry_count,linear,0.008121228,0.293418903
-stdprov_Psychiatry_count,linear,0.106143661,0.285332736
-stdprov_Psychologist_count,linear,0.15617412,0.285318843
-stdprov_Radiology_count,linear,0.368474998,0.232661781
-stdprov_Special Care Facility (NEC)_count,linear,0,0.22479497
-stdprov_Supply Center_count,linear,0.166360078,0.212937604
-stdprov_Transportation_count,linear,0.401483985,0.199712956
-stdprov_Urology_count,linear,0.182827181,0.199080524
-SEIZURE_FOCAL_ER_indicator,logistic,0.577858617,0.193543958
-SEIZURE_GENERALIZED_ER_count,linear,0.129236845,0.18891388
-ANY_EEG_count,linear,0.356591294,0.176885024
-SPECIAL_PROC_EP_count,linear,0.09436682,0.174439488
+,estimator type,score,,
+ER_EP_count,linear,0.545265766,0.577501252,dx_ccs_Epilepsy; convulsions_count
+ER_EP_indicator,logistic,0.730730798,0.419495995,dx_ccs_Epilepsy; convulsions_count
+RESCUE_DRUG_EP_count,linear,0.252952351,0.366495656,dx_ccs_Epilepsy; convulsions_count
+RESCUE_DRUG_EP_indicator,logistic,0.586823917,0.313044686,dx_ccs_Screening and history of mental health and substance abuse codes_count
+SEIZURE_OTHER_ER_count,linear,0.423670939,0.594041145,SEIZURE_OTHER_indicator
+SEIZURE_OTHER_ER_indicator,logistic,0.539461501,0.654546892,SEIZURE_OTHER_indicator
+SEIZURE_UNSPECIFIED_ER_count,linear,0.530888679,0.605774839,dx_ccs_Epilepsy; convulsions_count
+SEIZURE_UNSPECIFIED_ER_indicator,logistic,0.680752013,0.582858099,SEIZURE_UNSPECIFIED_indicator
+stdplac_Ambulatory Surgical Center_count,linear,0.02554762,0.436068499,stdprov_Ambulatory Surgery Centers_count
+stdplac_Emergency Room - Hospital_count,linear,0.728161825,0.567466413,dx_ccs_Abdominal pain_count
+stdplac_Federally Qualified Health Ctr_count,linear,0.00252509,0.22479497,dx_ccs_Diabetes or abnormal glucose tolerance complicating pregnancy; childbirth; or the puerperium_count
+stdplac_Independent Laboratory_count,linear,0.135451701,0.41514821,dx_ccs_Coagulation and hemorrhagic disorders_count
+stdplac_Inpatient Hospital_count,linear,0.719081903,0.491545391,dx_groups_Psychiatric disorders_count
+stdplac_Inpatient Psychiatric Facility_count,linear,0.192160469,0.401864907,dx_ccs_Mood disorders_count
+stdplac_Nursing Facility_count,linear,0.040215837,0.328240295,rx_atc_class_D03_count
+stdplac_Office_count,linear,0.358799579,0.339755311,dx_ccs_Developmental disorders_count
+stdplac_Other/Unknown_count,linear,0.438598681,0.626946807,dx_ccs_Developmental disorders_count
+stdplac_Outpatient Hospital-On Campus_count,linear,0.584501167,0.385302404,rx_atc_class_J01_count
+stdplac_Patient Home_count,linear,0.283295147,0.377560411,dx_ccs_Developmental disorders_count
+stdplac_Rural Health Clinic_count,linear,0.028007118,0.174439488,causal_topiramate_count_topiramate_count
+stdplac_Skilled Nursing Facility_count,linear,0.083690182,0.332251414,stdprov_Hospice Facility_count
+stdplac_Urgent Care Facility_count,linear,0.028600851,0.176885024,dx_ccs_Disorders of teeth and jaw_count
+stdprov_Acute Care Hospital_count,linear,0.483068044,0.421691671,dx_groups_Psychiatric disorders_count
+stdprov_Anesthesiology_count,linear,0.065314399,0.293418903,dx_ccs_Spondylosis; intervertebral disc disorders; other back problems_count
+stdprov_Cardiovascular Dis/Cardiology_count,linear,0.238756033,0.334102767,stdprov_Infectious Disease_count
+stdprov_Case Manager_count,linear,0.37768082,0.485080432,dx_ccs_Developmental disorders_count
+stdprov_Chemical Depend Treatment Ctr_count,linear,0.039093862,0.358765947,dx_ccs_Substance-related disorders_count
+stdprov_Chiropractor/DCM_count,linear,0.379321906,0.49131591,dx_ccs_Other bone disease and musculoskeletal deformities_count
+stdprov_Dermatology_count,linear,0.032414251,0.285318843,dx_ccs_Other skin disorders_count
+stdprov_Emergency Medicine_count,linear,0.39443179,0.358854829,dx_ccs_Abdominal pain_count
+stdprov_Extended Care Facility_count,linear,0.012979825,0.575678021,causal_rufinamide_count_rufinamide_count
+stdprov_Family Practice_count,linear,0.081629581,0.18891388,rx_atc_class_J01_count
+stdprov_Home Health Organiz/Agency_count,linear,0.176667523,0.30160507,dx_ccs_Nervous system congenital anomalies_count
+stdprov_Imaging Center_count,linear,0.10274169,0.285332736,dx_ccs_Other circulatory disease_count
+stdprov_Internal Medicine (NEC)_count,linear,0.333520406,0.477650647,dx_ccs_Respiratory failure; insufficiency; arrest (adult)_count
+stdprov_Laboratory_count,linear,0.143725373,0.396190956,dx_ccs_Coagulation and hemorrhagic disorders_count
+stdprov_Medical Doctor - MD (NEC)_count,linear,0.35124601,0.36192477,dx_ccs_Other injuries and conditions due to external causes_count
+stdprov_Mental Health Facilities_count,linear,0.085322304,0.45299133,dx_ccs_Developmental disorders_count
+stdprov_Nephrology_count,linear,0.48201283,0.536863427,stdprov_Treatment Center_count
+stdprov_Neurology_count,linear,0.414460325,0.364161811,ANY_EEG_indicator
+stdprov_Nuclear Medicine_count,linear,0.186089213,0.199080524,dx_groups_Diabetes_count
+stdprov_Nurse Practitioner_count,linear,0.043051432,0.386519893,dx_ccs_Other injuries and conditions due to external causes_count
+stdprov_Obstetrics & Gynecology_count,linear,0.229894207,0.392409972,dx_ccs_Other complications of birth; puerperium affecting management of mother_count
+stdprov_Optometrist_count,linear,0.000693958,0.199712956,dx_ccs_Blindness and vision defects_count
+stdprov_Other Facility (NEC)_count,linear,0.453834174,0.414991043,dx_groups_Psychiatric disorders_count
+stdprov_Pathology_count,linear,0.033363476,0.651077392,dx_ccs_Infective arthritis and osteomyelitis (except that caused by tuberculosis or sexually transmitted disease)_count
+stdprov_Physical Medicine & Rehab_count,linear,0.358222118,0.492305771,dx_ccs_Rehabilitation care; fitting of prostheses; and adjustment of devices_count
+stdprov_Podiatry_count,linear,0.008121228,0.212937604,dx_charlson_DIABETES_MELLITUS_CHRONIC_COMPLICATED_mean
+stdprov_Psychiatry_count,linear,0.106143661,0.330221332,dx_groups_Psychiatric disorders_count
+stdprov_Psychologist_count,linear,0.15617412,0.193543958,dx_ccs_Miscellaneous mental health disorders_count
+stdprov_Radiology_count,linear,0.368474998,0.3496429,dx_groups_Malignant solid neoplasms_count
+stdprov_Special Care Facility (NEC)_count,linear,0,0.551050031,stdprov_Psychiatric Nurse_count
+stdprov_Supply Center_count,linear,0.166360078,0.299986377,charlson_index
+stdprov_Transportation_count,linear,0.401483985,0.487365563,dx_groups_Renal disorders_count
+stdprov_Urology_count,linear,0.182827181,0.232661781,stdprov_Cardiovascular Surgery_count
+SEIZURE_FOCAL_ER_indicator,logistic,0.577858617,0.941589177,SEIZURE_FOCAL_ER_count
+SEIZURE_GENERALIZED_ER_count,linear,0.129236845,0.872851863,SEIZURE_GENERALIZED_ER_indicator
+ANY_EEG_count,linear,0.356591294,0.830302694,ANY_EEG_indicator
+SPECIAL_PROC_EP_count,linear,0.09436682,0.732870386,SPECIAL_PROC_DIAGNOSTIC_count
