@@ -1,0 +1,7 @@
+Drug,cases,# Patients,% Female,Age_mean,Age_sd,depression_prcnt,commercial_prcnt
+Carbamazepine,1533,1112,52.5,46.8,17.5,11.30,80.6
+Valproic acid,718,523,61.4,39.2,20,12.60,86.6
+Oxcarbazepine,507,393,66.4,41.2,19.5,12.70,84.5
+Lamotrigine,383,320,80,39.5,19.4,12.20,86.6
+Levetiracetam,172,154,72.7,39.5,17.7,11.00,90
+Topiramate,137,100,86,31.7,14.8,10.00,98
