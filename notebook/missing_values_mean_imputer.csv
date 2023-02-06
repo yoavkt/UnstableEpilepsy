@@ -1,0 +1,219 @@
+name,has_value
+ADMISSION_EP_daysToInddate_min,False
+ANY_ADVERSE_EVENT_EP_count,False
+ANY_ADVERSE_EVENT_EP_daysToInddate_min,False
+ANY_ADVERSE_EVENT_EP_indicator,False
+ANY_EEG_count,True
+ANY_EEG_daysToInddate_min,False
+ANY_EEG_indicator,False
+CARBAMAZEPINE_daysToInddate_min,False
+CLONAZEPAM_daysToInddate_min,False
+ER_EP_count,True
+ER_EP_daysToInddate_min,False
+ER_EP_indicator,True
+ESLICARBAZEPINE_daysToInddate_min,False
+ETHOSUXIMIDE_daysToInddate_min,False
+ETHOTOIN_daysToInddate_min,False
+EZOGABINE_daysToInddate_min,False
+FELBAMATE_daysToInddate_min,False
+FOSPHENYTOIN_daysToInddate_min,False
+GABAPENTIN_daysToInddate_min,False
+LACOSAMIDE_daysToInddate_min,False
+LAMOTRIGINE_daysToInddate_min,False
+LEVETIRACETAM_daysToInddate_min,False
+MEPHOBARBITAL_daysToInddate_min,False
+METHSUXIMIDE_daysToInddate_min,False
+NAN_daysToInddate_min,False
+OXCARBAZEPINE_daysToInddate_min,False
+PERAMPANEL_daysToInddate_min,False
+PHENOBARBITAL_daysToInddate_min,False
+PHENYTOIN_daysToInddate_min,False
+PREGABALIN_daysToInddate_min,False
+PRIMIDONE_daysToInddate_min,False
+RESCUE_DRUG_EP_count,True
+RESCUE_DRUG_EP_daysToInddate_min,False
+RESCUE_DRUG_EP_indicator,True
+RUFINAMIDE_daysToInddate_min,False
+SEIZURE_FOCAL_ER_daysToInddate_min,False
+SEIZURE_FOCAL_daysToInddate_min,False
+SEIZURE_GENERALIZED_ER_daysToInddate_min,False
+SEIZURE_GENERALIZED_daysToInddate_min,False
+SEIZURE_GENERALIZED_indicator,False
+SEIZURE_OTHER_ER_daysToInddate_min,False
+SEIZURE_OTHER_daysToInddate_min,False
+SEIZURE_UNSPECIFIED_ER_daysToInddate_min,False
+SEIZURE_UNSPECIFIED_daysToInddate_min,False
+SPECIAL_PROC_DIAGNOSTIC_count,False
+SPECIAL_PROC_DIAGNOSTIC_daysToInddate_min,False
+SPECIAL_PROC_DIAGNOSTIC_indicator,False
+SPECIAL_PROC_EP_count,True
+SPECIAL_PROC_EP_daysToInddate_min,False
+SPECIAL_PROC_EP_indicator,True
+SPECIAL_PROC_SURGICAL_count,True
+SPECIAL_PROC_SURGICAL_daysToInddate_min,False
+SPECIAL_PROC_SURGICAL_indicator,False
+SPECIAL_PROC_VIDEO_EEG_count,True
+SPECIAL_PROC_VIDEO_EEG_daysToInddate_min,False
+SPECIAL_PROC_VIDEO_EEG_indicator,False
+STATUS_EP_AT_ER_daysToInddate_min,False
+STATUS_EP_daysToInddate_min,False
+SUICIDE_daysToInddate_min,False
+TIAGABINE_daysToInddate_min,False
+TOPIRAMATE_daysToInddate_min,False
+TX_SWITCH_EP_daysToInddate_min,False
+VALPROATE_daysToInddate_min,False
+VIGABATRIN_daysToInddate_min,False
+ZONISAMIDE_daysToInddate_min,False
+index_drug,False
+rx_level4_ep_Barbirurates_and_derivatives_count,False
+rx_level4_ep_Benzodiazepine_derivatives_count,False
+rx_level4_ep_Carboxamide_derivative_count,False
+rx_level4_ep_Fatty_acid_derivatives_count,False
+rx_level4_ep_Hydantoin_derivatives_count,False
+rx_level4_ep_Other_antiepileptics_count,False
+rx_level4_ep_Succinimide_derivatives_count,False
+stdplac_Adult Living Care Facility_count,False
+stdplac_Ambulance (air or water)_count,False
+stdplac_Ambulatory Surgical Center_count,True
+stdplac_Assisted Living Facility_count,False
+stdplac_Birthing Center_count,False
+stdplac_Community Mental Health Center_count,True
+stdplac_Comprehensive Inpt Rehab Fac_count,False
+stdplac_Comprehensive Outpt Rehab Fac_count,False
+stdplac_Custodial Care Facility_count,False
+stdplac_End-Stage Renal Disease Facil_count,False
+stdplac_Federally Qualified Health Ctr_count,True
+stdplac_Group Home_count,False
+stdplac_Homeless Shelter_count,False
+stdplac_Hospice_count,False
+stdplac_Independent Clinic_count,False
+stdplac_Independent Laboratory_count,True
+stdplac_Inpatient Hospital_count,True
+stdplac_Inpatient Psychiatric Facility_count,True
+stdplac_Intermed Care/Mental Retarded_count,False
+stdplac_Mass Immunization Center_count,False
+stdplac_Military Treatment Facility_count,False
+stdplac_Mobile Unit_count,False
+stdplac_Non-resident Subst Abuse Facil_count,False
+stdplac_Nursing Facility_count,True
+stdplac_Office_count,True
+stdplac_Other/Unknown_count,True
+stdplac_Outpatient (NEC)_count,True
+stdplac_Outpatient Hospital-On Campus_count,True
+stdplac_Patient Home_count,True
+stdplac_Pharmacy_count,False
+stdplac_Place of Employment-Worksite_count,False
+stdplac_Psych Facility Partial Hosp_count,False
+stdplac_Psych Residential Treatmnt Ctr_count,False
+stdplac_Residential Subst Abuse Facil_count,False
+stdplac_Rural Health Clinic_count,True
+stdplac_School_count,False
+stdplac_Skilled Nursing Facility_count,True
+stdplac_State/Local Public Health Clin_count,False
+stdplac_Temporary Lodging_count,False
+stdplac_Urgent Care Facility_count,True
+stdplac_Walk-in Retail Health Clinic_count,False
+stdprov_Abdominal Surgery_count,False
+stdprov_Acupuncturist_count,False
+stdprov_Acute Care Hospital_count,True
+stdprov_Allergy & Immunology_count,False
+stdprov_Ambulatory Surgery Centers_count,False
+stdprov_Birthing Center_count,False
+stdprov_Cardiothoracic Surgery_count,False
+stdprov_Cardiovascular Surgery_count,False
+stdprov_Case Manager_count,True
+stdprov_Chemical Depend Treatment Ctr_count,True
+stdprov_Child Psychiatry_count,False
+stdprov_Chiropractor/DCM_count,True
+stdprov_Colon & Rectal Surgery_count,True
+stdprov_Continuing Care Retirement Com_count,False
+stdprov_Convalescent Care Facility_count,False
+stdprov_Critical Care Medicine_count,False
+stdprov_Day/Night Care Center_count,False
+stdprov_Dental Specialist_count,False
+stdprov_Dental Technician_count,False
+stdprov_Dermatologic Surgery_count,False
+stdprov_Dietitian_count,False
+stdprov_Endocrinology & Metabolism_count,False
+stdprov_Extended Care Facility_count,True
+stdprov_General Vascular Surgery_count,False
+stdprov_Genetics_count,False
+stdprov_Geriatric Hospital_count,False
+stdprov_Geriatric Medicine_count,False
+stdprov_Head and Neck Surgery_count,False
+stdprov_Health Educator/Agency_count,False
+stdprov_Hearing Labs_count,False
+stdprov_Home Health Organiz/Agency_count,True
+stdprov_Hospice Facility_count,False
+stdprov_Hospitalist_count,False
+stdprov_Imaging Center_count,True
+stdprov_Infectious Disease_count,False
+stdprov_Infirmary_count,False
+stdprov_Intermediate Care Facility_count,False
+stdprov_Internal Medicine (NEC)_count,True
+stdprov_Longterm Care (NEC)_count,False
+stdprov_Medical Doctor - MD (NEC)_count,True
+stdprov_Medical Technician_count,False
+stdprov_Mental Health Facilities_count,True
+stdprov_Mental Health/Chemical Dep NEC_count,False
+stdprov_Mental Hlth/Chem Dep Day Care_count,False
+stdprov_Midwife_count,False
+stdprov_MultiSpecialty Physician Group_count,True
+stdprov_Neonatal-Perinatal Medicine_count,False
+stdprov_Nuclear Medicine_count,True
+stdprov_Nurse Practitioner_count,True
+stdprov_Nursing Services_count,False
+stdprov_Optician_count,True
+stdprov_Optometrist_count,True
+stdprov_Osteopathic Medicine_count,False
+stdprov_Other Facility (NEC)_count,True
+stdprov_Otolaryngology_count,False
+stdprov_Pain Mgmt/Pain Medicine_count,True
+stdprov_Palliative Medicine_count,False
+stdprov_Pediatric Allergy & Immunology_count,False
+stdprov_Pediatric Anesthesiology_count,False
+stdprov_Pediatric Cardiology_count,False
+stdprov_Pediatric Critical Care Med_count,False
+stdprov_Pediatric Emergency Medicine_count,False
+stdprov_Pediatric Endocrinology_count,False
+stdprov_Pediatric Gastroenterology_count,False
+stdprov_Pediatric Hematology-Oncology_count,False
+stdprov_Pediatric Infectious Diseases_count,False
+stdprov_Pediatric Nephrology_count,False
+stdprov_Pediatric Ophthalmology_count,False
+stdprov_Pediatric Orthopaedics_count,False
+stdprov_Pediatric Otolaryngology_count,False
+stdprov_Pediatric Pathology_count,False
+stdprov_Pediatric Pulmonology_count,False
+stdprov_Pediatric Radiology_count,False
+stdprov_Pediatric Rheumatology_count,False
+stdprov_Pediatric Specialist (NEC)_count,False
+stdprov_Pediatric Surgery_count,False
+stdprov_Pediatric Urology_count,False
+stdprov_Pharmacist_count,False
+stdprov_Pharmacy_count,False
+stdprov_Physical Medicine & Rehab_count,True
+stdprov_Physician Assistant_count,True
+stdprov_Plastic/Maxillofacial Surgery_count,False
+stdprov_Podiatry_count,True
+stdprov_Preventative Medicine_count,False
+stdprov_Proctology_count,False
+stdprov_Psychiatric Nurse_count,False
+stdprov_Public Health Agency_count,True
+stdprov_Rehabilitation Facilities_count,False
+stdprov_Renal Dialysis Therapy_count,False
+stdprov_Residential Treatment Center_count,False
+stdprov_Special Care Facility (NEC)_count,True
+stdprov_Spiritual Healers_count,False
+stdprov_Sports Medicine (Pediatrics)_count,False
+stdprov_Supply Center_count,True
+stdprov_Surgeon (NEC)_count,True
+stdprov_Surgical Critical Care_count,False
+stdprov_Therapists (Alternative)_count,False
+stdprov_Therapists (Supportive)_count,True
+stdprov_Transplant Surgery_count,False
+stdprov_Transportation_count,True
+stdprov_Traumatic Surgery_count,False
+stdprov_Treatment Center_count,False
+stdprov_Vision Center_count,False
+treatment_arm,False
