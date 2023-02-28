@@ -25,7 +25,10 @@ UTILS_METRICS = OrderedDict([
             ('delong_test',
             MetricDelongsTest(pred1="pred_proba1", pred2="pred_proba2",target="target"))
         ])
-
+UTILS_SINGLE_METRICS = OrderedDict([
+                ("auc1", CI(MetricAUCROC(pred="pred_proba1", target="target"), 
+                       stratum="target", rnd_seed=seed))
+        ])
 def impute_columns(X, imputed_values,replace_mean=True):
     """
     Add X with missing columns, the values entered are the mean values
@@ -145,3 +148,46 @@ def evaluate_model(clf1,clf2,X,y,metrics=None):
         metrics = UTILS_METRICS
     evaluator = EvaluatorDefault()
     return evaluator.eval(ids=None, data=prepare_fuse_data(clf1,clf2,X,y), metrics=metrics) 
+
+def evaluate_single_model(clf1,X,y,metrics=None):
+    """This method apply both estimators of the given data set 
+
+    Args:
+        clf1 : The first classifier to estimate  
+        clf2 : The first classifier to estimate 
+        X (pd.DataFrame): The data set to apply the classifiers on
+        y (pd.Series): the response for the data set 
+        metrics (OrderedDict): ordered dict with the metric definition 
+
+    Returns:
+        dictionary: the evaluation results 
+    """
+    if metrics is None:
+        metrics = UTILS_SINGLE_METRICS
+    evaluator = EvaluatorDefault()
+    return evaluator.eval(ids=None, data=prepare_single_fuse_data(clf1,X,y), metrics=metrics) 
+
+def prepare_single_fuse_data(clf,X,y):
+    """
+    The method takes two classifiers and create a data frame
+    that contains the five columns two predict (one per classifier names proba1,proba2)
+    two predict proba  columns (predict_proba1 and predict_proba2) and one target column
+    the columns names are fixed and must be in accordance to the 
+
+    Args:
+        clf1 : The first classifier to estimate  
+        X (pd.DataFrame): The data set to apply the classifiers on
+        y (pd.Series): the response for the data set 
+
+    Returns:
+        pd.DataFrame: a data frame
+        that contains the five columns two predict (one per classifier names proba1,proba2)
+        two predict proba  columns (predict_proba1 and predict_proba2) and one target column
+        the columns names are fixed and must be in accordance to the 
+    """
+    res = pd.DataFrame(columns=['pred1','pred2','target','id'])
+    res['id']=X.index
+    res['pred1'] = clf.predict(X).squeeze()
+    res['pred_proba1'] = clf.predict_proba(X)[:,1].squeeze()
+    res['target'] = y.astype(int).values  
+    return res
